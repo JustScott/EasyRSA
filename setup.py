@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md", "r") as file:
     long_description = file.read()
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Simpler to use implementation of the pycryptodome RSA algorithm'
 
 # Setting up
@@ -22,7 +22,7 @@ setup(
     },
     package_dir={"":"src"},
     packages=["rapidrsa"],
-    install_requires=[],
+    install_requires=['pycryptodome'],
     keywords=['python','encryption','decryption','cryptography'],
     classifiers=[
         'Development Status :: 3 - Alpha',
