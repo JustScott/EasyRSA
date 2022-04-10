@@ -24,6 +24,10 @@ Methods:
     verify_signature(self, signature: bytes, digest: object, public_key=None) -> bool
         Verifies the signature of the data, ensuring the data hasn't been tampered with
 
+    generate_password(self, length=64) -> str
+        Generates a random password to share with the client/server for symmetric cryptography
+
+
 '''
 
 

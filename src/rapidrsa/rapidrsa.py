@@ -24,6 +24,10 @@ Methods:
     verify_signature(self, signature: bytes, digest: object, public_key=None) -> bool
         Verifies the signature of the data, ensuring the data hasn't been tampered with
 
+    generate_password(self, length=64) -> str
+        Generates a random password to share with the client/server for symmetric cryptography        
+    
+
 '''
 
 
@@ -31,7 +35,8 @@ from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
-
+from random import choice
+import string
 
 class rsa:
     '''
@@ -225,6 +230,29 @@ class rsa:
             return True
         except ValueError:
             return False
+
+    def generate_password(self, length=64) -> str:
+        '''
+        Generates a random password to share with the client/server for symmetric cryptography
+        
+        :method:: generate_password(self, length=64) -> str
+
+        Args:
+            length (int, *optional):
+                The length of the generated password
+
+        Returns:
+            str:
+                The randomly generated password
+        
+        '''
+        #Returns every printable ascii character, exluding whitespace characters (other than space)
+        characters = string.printable.replace(string.whitespace, " ")
+
+        #Used random.choice() to choose random characters from the 'characters' variable, then joins them into a string
+        password = "".join([choice(characters) for i in range(length)])
+
+        return password
 
 
 if __name__=="__main__":
