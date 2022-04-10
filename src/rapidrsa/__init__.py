@@ -27,4 +27,4 @@ Methods:
 '''
 
 
-from easyrsa.easyrsa import rsa
+from rapidrsa.rapidrsa import rsa

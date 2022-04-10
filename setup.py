@@ -8,7 +8,7 @@ DESCRIPTION = 'Simpler to use implementation of the pycryptodome RSA algorithm'
 
 # Setting up
 setup(
-    name="easyrsa",
+    name="rapidrsa",
     version=VERSION,
     license="MIT",
     author="JustScott",
@@ -16,12 +16,12 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
-    url = "https://github.com/JustScott/EasyRSA",
+    url = "https://github.com/JustScott/RapidRSA",
     project_urls={
-        "Bug Reports":"https://github.com/JustScott/EasyRSA/issues",
+        "Bug Reports":"https://github.com/JustScott/RapidRSA/issues",
     },
     package_dir={"":"src"},
-    packages=["easyrsa"],
+    packages=["rapidrsa"],
     install_requires=[],
     keywords=['python','encryption','decryption','cryptography'],
     classifiers=[
@@ -30,7 +30,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3.0',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Security :: Cryptography',
     ]
 )
