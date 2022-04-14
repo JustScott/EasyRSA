@@ -65,7 +65,7 @@ class rsa:
         self.key_size = key_size
 
         #Use the keys the user supplied
-        if public_key and private_key:
+        if public_key or private_key:
             self.public_key = public_key
             self.private_key = private_key
         #If the user didn't supply keys, generate new ones
@@ -111,7 +111,7 @@ class rsa:
 
             message (str or bytes): The message you want encrypted
 
-        Return:
+        Returns:
             bytes: The encrypted version of your message, can only be decrypted
                 by the Private Key of the pair
         '''
@@ -143,7 +143,7 @@ class rsa:
 
             encrypted_text (bytes): The encrypted verison of the message
 
-        Return:
+        Returns:
             str or bytes: The original message
         '''
         #Allows the user to supply their own private key
@@ -214,8 +214,8 @@ class rsa:
                 The public key for verifying that the signature was created by the private key
                 its linked to, and that the data isn't tampered with
 
-        Return:
-            bool: Returns True if the signature is correct
+        Returns:
+            bool: True if the signature is correct
         '''
         #Allows the user to supply their own public key
         if public_key:
