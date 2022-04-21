@@ -35,7 +35,7 @@ if rsa.verify_signature(signature, digest):
 
 - <a href="https://github.com/Legrandin/pycryptodome">pycryptodome on GitHub</a>
 
-- <a href="pycryptodome">pycryptodome on PyPi</a>
+- <a href="https://pypi.org/project/pycryptodome/">pycryptodome on PyPi</a>
 
 
 <br>
