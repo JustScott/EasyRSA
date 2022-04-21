@@ -31,11 +31,11 @@ if rsa.verify_signature(signature, digest):
 
 <h2>Required Dependences From PyPi</h2>
 
-<h5>ListCrypt<h5>
+<h4>pycryptodome == 3.14.1<h4>
 
-- <a href="https://github.com/JustScott/ListCrypt">ListCrypt on GitHub</a>
+- <a href="https://github.com/Legrandin/pycryptodome">pycryptodome on GitHub</a>
 
-- <a href="https://pypi.org/project/listcrypt/">ListCrypt on PyPi</a>
+- <a href="pycryptodome">pycryptodome on PyPi</a>
 
 
 <br>
