@@ -22,7 +22,7 @@ setup(
     },
     package_dir={"":"src"},
     packages=["rapidrsa"],
-    install_requires=['pycryptodome==3.14.1'],
+    install_requires=['pycryptodome>=3.15.0'],
     keywords=['python','encryption','decryption','cryptography'],
     classifiers=[
         'Development Status :: 3 - Alpha',
