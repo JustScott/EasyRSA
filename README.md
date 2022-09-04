@@ -6,21 +6,22 @@
 
 # Example Use
 ```python
-message = "Example Text"
+from rapidrsa import rsa
 
 rsa = rsa()
 
-e = rsa.encrypt(message)
+e = rsa.encrypt("Example Text")
 d = rsa.decrypt(e)
 ```
+
 <h4>Easily Create and Verify Signatures</h4>
 
 ```python
-message = "Example Text"
+from rapidrsa import rsa
 
 rsa = rsa()
 
-e = rsa.encrypt(message)
+e = rsa.encrypt("Example Text")
 
 signature, digest = rsa.create_signature(message)
 
@@ -50,7 +51,6 @@ Methods:
     keygen(self, key_size: int) -> bytes and bytes
         Generates Keys for Encryption/Decryption. The 'key_size' will determine the security
         and speed of your data (bigger is more secure, but slower)
-    
     encrypt(self, data: str or bytes, public_key=None) -> bytes
         Only requires a public key if you don't want to use the class generated key
     decrypt(self, encrypted_text: bytes, private_key=None) -> str or bytes
