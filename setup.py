@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md", "r") as file:
     long_description = file.read()
 
-VERSION = '0.0.6'
+VERSION = '1.0.0'
 DESCRIPTION = 'Simpler to use implementation of the pycryptodome RSA algorithm'
 
 # Setting up
